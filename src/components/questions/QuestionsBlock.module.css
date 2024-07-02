@@ -1,0 +1,7 @@
+.section {
+    padding-bottom: var(--padding-section);
+}
+
+.zag__margin {
+    margin-bottom: 41px;
+}

@@ -1,0 +1,36 @@
+.section {
+    margin-bottom: var(--padding-section);
+    background: var(--extralight-gray);
+}
+
+.interviwee__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 32px;
+    padding: 68px 0;
+}
+
+.interviwee__zag {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    color: var(--black);
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+
+.interviwee__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--black);
+}
+
+
+@media (max-width: 800px) {
+    .interviwee__block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #2a6cea;
+  --black: #191c1f;
+  --dark-gray: #5e646a;
+  --gray: #83898f;
+  --mid-grey: #c2c8cd;
+  --light-gray: #eceff2;
+  --extralight-gray: #f6f8fa;
+  --white: #fff;
+  --dangerous: #f13636;
+  --green-success: #25cd82;
+  --primary-hover: #397dff;
+  --primary-disabled: #abcae6;
+  --font-family: "Graphik LCG", sans-serif;
+  --padding-section: 80px;
+}
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('./fonts/GraphikLCG-Regular.woff2') format('woff2'),
+    url('./fonts/GraphikLCG-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: url('./fonts/GraphikLCG-Bold.woff2') format('woff2'),
+    url('./fonts/GraphikLCG-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Graphik LCG', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.container {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  padding-left: clamp(20px, calc(1.25rem + ((1vw - 7.68px) * 28.8194)), 352px);
+  padding-right: clamp(20px, calc(1.25rem + ((1vw - 7.68px) * 28.8194)), 352px);;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.zag__h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--black);
+}
+
+.footer {
+  padding: 28px 0;
+  border-top: 1px solid var(--light-gray);
+  ;
+}
+
+.footer__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: center;
+  color: var(--black);
+}
+
+
+@media(max-width: 750px) { 
+  .zag__h2 {
+    font-size: 24px;
+  }
+}
+
+@media(max-width: 350px) { 
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
